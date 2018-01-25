@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "build:module": "babel ./src --out-dir ./ --presets env,minify",
-    "build:umd": "webpack ./src/umd.js ./umd.js -p",
+    "build:umd": "webpack ./src/umd.js ./umd.js -p --output-library-target=umd",
+    "watch": "yarn build:module --watch & yarn build:umd --watch",
     "build": "yarn build:module && yarn build:umd"
   },
   "devDependencies": {
