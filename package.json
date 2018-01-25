@@ -4,6 +4,7 @@
   "description": "Development utility to see current bootstrap size in the browser ",
   "main": "index.js",
   "author": "Axel Yung <axelyung@gmail.com>",
+  "repository": "github:axelyung/bootstrap-size-display",
   "license": "MIT",
   "scripts": {
     "build:module": "babel ./src --out-dir ./ --presets env,minify",
