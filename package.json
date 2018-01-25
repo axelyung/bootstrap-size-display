@@ -9,6 +9,7 @@
     "babel": "babel ./src --out-dir ./ --presets env,minify"
   },
   "devDependencies": {
+    "babel": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-minify": "^0.2.0"
   }
