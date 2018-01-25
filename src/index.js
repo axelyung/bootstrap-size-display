@@ -4,7 +4,7 @@ function bootstrapSizeDisplay(customStyles) {
         if (document.readyState == 'complete') {
             var el = document.createElement('div');
             el.id = 'bootstrap-size-display';
-            el.class = 'override';
+            el.className = 'override';
 
             el.innerHTML = `
         <div class="xs visible-xs-block d-xs-block d-sm-none">xs</div>
@@ -18,12 +18,11 @@ function bootstrapSizeDisplay(customStyles) {
             style.innerHTML = `
         #bootstrap-size-display {
             position: fixed;
-            font-size: 50px;
-            line-height: 50px;
-            text-align: left;
+            font-size: 2rem;
+            line-height: 2rem;
             z-index: 1000000;
-            bottom: 8px;
-            right: 8px;
+            bottom: .5rem;
+            right: .5rem;
         }
 
         #bootstrap-size-display>.sm,
