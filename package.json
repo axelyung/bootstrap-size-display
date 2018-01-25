@@ -1,0 +1,15 @@
+{
+  "name": "bootstrap-size-display",
+  "version": "1.0.0",
+  "description": "Development utility to see current bootstrap size in the browser ",
+  "main": "index.js",
+  "author": "Axel Yung",
+  "license": "MIT",
+  "scripts": {
+    "babel": "babel ./src --out-dir ./ --presets env,minify"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-minify": "^0.2.0"
+  }
+}
