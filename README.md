@@ -4,14 +4,21 @@ A simple development utility for displaying the current [Bootstrap](https://getb
 
 ## Install
 
+Install it as a local dependency:
 ```bash
 $ npm i --save-dev bootstrap-size-display
 
 $ yarn add -D bootstrap-size-display
 ```
+Or use the `unpkg` cdn:
+```html
+<script src="https://unpkg.com/bootstrap-size-display/umd.js"></script>
+```
+
+
 
 ## Setup
- does this mak
+The script will run on page load by default, so importing the module is only necessary when used as a local dependency.
 ```javascript
 // CommonJS
 require('bootstrap-size-display');
