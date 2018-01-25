@@ -18,8 +18,8 @@ function bootstrapSizeDisplay(customStyles) {
             style.innerHTML = `
                 #bootstrap-size-display {
                     position: fixed;
-                    font-size: 5rem;
-                    line-height: 5rem;
+                    font-size: 2rem;
+                    line-height: 2rem;
                     z-index: 1000000;
                     bottom: .5rem;
                     right: .5rem;
