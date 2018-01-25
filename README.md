@@ -11,10 +11,10 @@ $ yarn add -D bootstrap-size-display
 ```
 
 ## Setup
-
+ does this mak
 ```javascript
 // CommonJS
-require('bootstrap-size-display);
+require('bootstrap-size-display');
 
 // ES6 modules
 import bootstrapSizeDisplay from 'bootstrap-size-display';
@@ -36,7 +36,7 @@ To override default styles there are two options:
 
 1) Initiate with a javascript object to set inline style:
 ```javascript
-require('bootstrap-size-display)({
+require('bootstrap-size-display')({
     fontSize: '20px',
     top: '10px', 
     left: '10px',
