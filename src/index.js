@@ -7,31 +7,24 @@ function bootstrapSizeDisplay(customStyles) {
             el.className = 'override';
 
             el.innerHTML = `
-        <div class="xs visible-xs-block d-xs-block d-sm-none">xs</div>
-        <div class="sm visible-sm-block d-none d-sm-block d-md-none">sm</div>
-        <div class="md visible-md-block d-none d-md-block d-lg-none">md</div>
-        <div class="lg visible-lg-block d-none d-lg-block d-xl-none">lg</div>
-        <div class="xl visible-xl-block d-none d-xl-block d-xxl-none">xl</div>
-        <div class="xxl visible-xxl-block d-none d-xxl-block">xxl</div>`;
+                <div class="bsd-xs visible-xs visible-xs-block hidden-sm-up d-xs-block d-sm-none">xs</div>
+                <div class="bsd-sm visible-sm visible-sm-block hidden-md-up hidden-xs-down d-none d-sm-block d-md-none">sm</div>
+                <div class="bsd-md visible-md visible-md-block hidden-lg-up hidden-sm-down d-none d-md-block d-lg-none">md</div>
+                <div class="bsd-lg visible-lg visible-lg-block hidden-xl-up hidden-md-down d-none d-lg-block d-xl-none">lg</div>
+                <div class="bsd-xl visible-xl hidden-xs hidden-sm hidden-md hidden-lg visible-xl-block hidden-lg-down d-none d-xl-block">xl</div>
+            `;
 
             var style = document.createElement('style');
             style.innerHTML = `
-        #bootstrap-size-display {
-            position: fixed;
-            font-size: 2rem;
-            line-height: 2rem;
-            z-index: 1000000;
-            bottom: .5rem;
-            right: .5rem;
-        }
-
-        #bootstrap-size-display>.sm,
-        #bootstrap-size-display>.md,
-        #bootstrap-size-display>.lg,
-        #bootstrap-size-display>.xl,
-        #bootstrap-size-display>.xxl {
-            display: none;
-        }`;
+                #bootstrap-size-display {
+                    position: fixed;
+                    font-size: 5rem;
+                    line-height: 5rem;
+                    z-index: 1000000;
+                    bottom: .5rem;
+                    right: .5rem;
+                }
+            `;
 
             if (customStyles && typeof customStyles === 'object') {
                 Object.keys(customStyles).forEach(function (key) {
