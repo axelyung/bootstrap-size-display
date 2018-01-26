@@ -2,6 +2,8 @@
 
 A simple development utility for displaying the current [Bootstrap](https://getbootstrap.com/) class in the browser.
 
+![bootstrap-size-display example](./example_screenshot.png)
+
 ## Install
 
 Install it as a local dependency:
