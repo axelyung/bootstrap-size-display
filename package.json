@@ -7,15 +7,13 @@
   "repository": "github:axelyung/bootstrap-size-display",
   "license": "MIT",
   "scripts": {
-    "build:module": "babel ./src --out-dir ./ --presets env,minify",
-    "build:umd": "webpack ./src/umd.js ./umd.js -p --output-library-target=umd",
-    "watch": "yarn build:module --watch & yarn build:umd --watch",
-    "build": "yarn build:module && yarn build:umd"
+    "build": "webpack",
+    "dev": "webpack --watch"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-minify": "^0.2.0",
     "webpack": "^3.10.0"
   }
 }
