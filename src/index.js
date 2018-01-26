@@ -1,8 +1,8 @@
 
-function bootstrapSizeDisplay(customStyles) {
-    document.onreadystatechange = function () {
-        if (document.readyState == 'complete') {
-            var el = document.createElement('div');
+function bsd(customStyles) {
+    document.onreadystatechange = () => {
+        if (document.readyState === 'complete') {
+            let el = document.createElement('div');
             el.id = 'bootstrap-size-display';
             el.className = 'override';
 
@@ -14,7 +14,7 @@ function bootstrapSizeDisplay(customStyles) {
                 <div class="bsd-xl visible-xl hidden-xs hidden-sm hidden-md hidden-lg visible-xl-block hidden-lg-down d-none d-xl-block">xl</div>
             `;
 
-            var style = document.createElement('style');
+            let style = document.createElement('style');
             style.innerHTML = `
                 #bootstrap-size-display {
                     position: fixed;
@@ -27,17 +27,17 @@ function bootstrapSizeDisplay(customStyles) {
             `;
 
             if (customStyles && typeof customStyles === 'object') {
-                Object.keys(customStyles).forEach(function (key) {
+                Object.keys(customStyles).forEach((key) => {
                     el.style[key] = customStyles[key];
-                })
+                });
             }
 
-            document.body.appendChild(el)
-            document.body.appendChild(style)
+            document.body.appendChild(el);
+            document.body.appendChild(style);
         }
-    }
+    };
 }
 
-bootstrapSizeDisplay();
+bsd();
 
-module.exports = bootstrapSizeDisplay;
+module.exports = bsd;
