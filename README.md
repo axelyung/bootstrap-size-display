@@ -2,6 +2,8 @@
 
 A simple development utility for displaying the current [Bootstrap](https://getbootstrap.com/) class in the browser.
 
+![bootstrap-size-display example](./example_screenshot.png)
+
 ## Install
 
 Install it as a local dependency:
@@ -12,7 +14,7 @@ $ yarn add -D bootstrap-size-display
 ```
 Or use the `unpkg` cdn:
 ```html
-<script src="https://unpkg.com/bootstrap-size-display/umd.js"></script>
+<script src="https://unpkg.com/bootstrap-size-display/dist/bsd.min.js"></script>
 ```
 
 
@@ -33,7 +35,6 @@ Default styles are:
 #bootstrap-size-display {
     position: fixed;
     font-size: 2rem;
-    line-height: 2rem;
     z-index: 1000000;
     bottom: .5rem;
     right: .5rem;

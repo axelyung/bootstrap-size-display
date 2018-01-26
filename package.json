@@ -1,21 +1,35 @@
 {
   "name": "bootstrap-size-display",
-  "version": "1.0.3",
+  "version": "1.0.4",
+  "keywords": [
+    "bootstrap",
+    "dev",
+    "development",
+    "tool",
+    "utility"
+  ],
   "description": "Development utility to see current bootstrap size in the browser ",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "Axel Yung <axelyung@gmail.com>",
   "repository": "github:axelyung/bootstrap-size-display",
+  "issues": {
+    "url": "https://github.com/axelyung/bootstrap-size-display/issues",
+    "email": "axelyung@gmail.com"
+  },
   "license": "MIT",
   "scripts": {
-    "build:module": "babel ./src --out-dir ./ --presets env,minify",
-    "build:umd": "webpack ./src/umd.js ./umd.js -p --output-library-target=umd",
-    "watch": "yarn build:module --watch & yarn build:umd --watch",
-    "build": "yarn build:module && yarn build:umd"
+    "build": "webpack",
+    "dev": "webpack --watch",
+    "prepublish": "yarn build"
   },
+  "pre-commit": [
+    "prepublish"
+  ],
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-minify": "^0.2.0",
+    "pre-commit": "^1.2.2",
     "webpack": "^3.10.0"
   }
 }
