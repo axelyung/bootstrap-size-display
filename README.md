@@ -20,13 +20,27 @@ Or use the `unpkg` cdn:
 
 
 ## Setup
-The script will run on page load by default, so importing the module is only necessary when used as a local dependency.
+Call `bsd` to add display on page load:
+```html
+    ...
+    <script src="https://unpkg.com/bootstrap-size-display/dist/bsd.min.js"></script>
+</head>
+<body>
+    ...    
+    <script>
+        bsd()
+    </script>
+    ...
+``` 
+Importing the module is only necessary when used as a local dependency.
 ```javascript
 // CommonJS
-require('bootstrap-size-display');
+var bsd = require('bootstrap-size-display');
 
 // ES6 modules
-import bootstrapSizeDisplay from 'bootstrap-size-display';
+import bsd from 'bootstrap-size-display';
+
+bsd();
 ```
 
 ## Overriding default styles
