@@ -33,6 +33,4 @@ function bsd(customStyles) {
     };
 }
 
-bsd();
-
 module.exports = bsd;
