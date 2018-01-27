@@ -1,6 +1,6 @@
 # Bootstrap Size Display
 
-A simple development utility for displaying the current [Bootstrap](https://getbootstrap.com/) class in the browser.
+A simple development utility for displaying the current [Bootstrap](https://getbootstrap.com/) class in the browser. Compatible from `v3.0.0`.
 
 ![bootstrap-size-display example](./example_screenshot.png)
 
