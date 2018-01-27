@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const common = {
     module: {
@@ -19,6 +20,7 @@ const common = {
             }],
     },
     plugins: [
+        new CleanWebpackPlugin(path.join(__dirname, 'dist')),
         new webpack.optimize.UglifyJsPlugin({
             include: /\.min\.js$/,
             minimize: true,
