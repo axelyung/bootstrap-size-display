@@ -1,6 +1,6 @@
 # Bootstrap Size Display
 
-A simple development utility for displaying the current [Bootstrap](https://getbootstrap.com/) class in the browser.
+A simple development utility for displaying the current [Bootstrap](https://getbootstrap.com/) class in the browser. Compatible from `v3.0.0`.
 
 ![bootstrap-size-display example](./example_screenshot.png)
 
@@ -20,13 +20,28 @@ Or use the `unpkg` cdn:
 
 
 ## Setup
-The script will run on page load by default, so importing the module is only necessary when used as a local dependency.
+Call `bsd` to add display on page load:
+```html
+    ...
+    <script src="https://unpkg.com/bootstrap-size-display/dist/bsd.min.js"></script>
+</head>
+<body>
+    ...    
+    <script>
+        bsd()
+    </script>
+    ...
+``` 
+Importing the module is only necessary when used as a local dependency.
 ```javascript
 // CommonJS
-require('bootstrap-size-display');
+var bsd = require('bootstrap-size-display');
 
 // ES6 modules
-import bootstrapSizeDisplay from 'bootstrap-size-display';
+import bsd from 'bootstrap-size-display';
+
+
+bsd();
 ```
 
 ## Overriding default styles
@@ -46,7 +61,7 @@ To override default styles there are two options:
 ```javascript
 require('bootstrap-size-display')({
     fontSize: '20px',
-    top: '10px', 
+    top: '5px', 
     left: '10px',
     color: 'purple';
 });
@@ -55,7 +70,7 @@ require('bootstrap-size-display')({
 ```css
 #bootstrap-size-display.override {
     fontSize: 20px;
-    top: 10px; 
+    top: 5px; 
     left: 10px;
     color: purple;
 }
