@@ -40,6 +40,7 @@ var bsd = require('bootstrap-size-display');
 // ES6 modules
 import bsd from 'bootstrap-size-display';
 
+
 bsd();
 ```
 
@@ -60,7 +61,7 @@ To override default styles there are two options:
 ```javascript
 require('bootstrap-size-display')({
     fontSize: '20px',
-    top: '10px', 
+    top: '5px', 
     left: '10px',
     color: 'purple';
 });
@@ -69,7 +70,7 @@ require('bootstrap-size-display')({
 ```css
 #bootstrap-size-display.override {
     fontSize: 20px;
-    top: 10px; 
+    top: 5px; 
     left: 10px;
     color: purple;
 }
