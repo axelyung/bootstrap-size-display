@@ -59,7 +59,7 @@ To override default styles there are two options:
 
 1) Initiate with a javascript object to set inline style:
 ```javascript
-require('bootstrap-size-display')({
+bsd({
     fontSize: '20px',
     top: '5px', 
     left: '10px',
