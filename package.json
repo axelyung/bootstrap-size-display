@@ -22,9 +22,6 @@
     "dev": "webpack --watch",
     "prepublish": "yarn build"
   },
-  "pre-commit": [
-    "prepublish"
-  ],
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
